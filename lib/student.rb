@@ -68,8 +68,7 @@ class Student
   def update
     sql =<<-SQL
     UPDATE students
-    SET name = ?
-    SET grade = ?
+    SET name = ?, SET grade = ?
     WHERE id = ?
     SQL
 
