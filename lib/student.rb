@@ -69,7 +69,6 @@ class Student
     sql =<<-SQL
     UPDATE students
     SET name = ?
-    SET grade = ?
     WHERE name = ?
     SQL
 
