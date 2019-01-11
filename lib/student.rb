@@ -69,10 +69,10 @@ class Student
     sql =<<-SQL
     UPDATE students
     SET name = ?
-    WHERE name = ?
+    WHERE id = ?
     SQL
 
-    DB[:conn].execute(sql,self.name,self.grade,self.name)
+    DB[:conn].execute(sql,self.name,self.grade,self.id)
   end
 
 end
